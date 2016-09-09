@@ -29,9 +29,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Order Gas"/>
-                                <connections>
-                                    <segue destination="FzZ-Xq-45V" kind="show" id="vvk-xm-DGW"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_pin" translatesAutoresizingMaskIntoConstraints="NO" id="EML-tw-SZt">
                                 <rect key="frame" x="265" y="235" width="70" height="100"/>
@@ -85,131 +82,23 @@
             </objects>
             <point key="canvasLocation" x="305" y="361"/>
         </scene>
-        <!--Fruit View Controller-->
-        <scene sceneID="1z6-yF-hBJ">
+        <!--View Controller-->
+        <scene sceneID="TzV-nJ-apx">
             <objects>
-                <viewController id="FzZ-Xq-45V" customClass="FruitViewController" customModule="Shell_Delivered" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uOf-Y0-e7x" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aN5-CL-1Ev"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zbd-Ww-DwH"/>
+                        <viewControllerLayoutGuide type="top" id="Huy-hD-eXM"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Sc-Ym-ic0"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v0E-Fm-3xd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qpu-22-ndN">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="4CZ-Hr-ZIL">
-                                    <size key="itemSize" width="182" height="182"/>
-                                    <size key="headerReferenceSize" width="50" height="50"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="z0c-nh-bfm" customClass="FruitCell" customModule="FruitsDiet" customModuleProvider="target">
-                                        <rect key="frame" x="69" y="50" width="182" height="182"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8LC-ze-ZDl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="195" height="162"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4i-ce-iCr">
-                                                    <rect key="frame" x="35" y="160" width="125" height="21"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <connections>
-                                            <outlet property="caption" destination="A4i-ce-iCr" id="BR0-fy-5k9"/>
-                                            <outlet property="imageView" destination="8LC-ze-ZDl" id="DgZ-QP-75f"/>
-                                            <segue destination="PzR-lN-3Zj" kind="push" id="ox7-B9-70a"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" restorationIdentifier="HeaderView" reuseIdentifier="HeaderView" id="yEQ-UO-UgI" customClass="FruitsHeaderView" customModule="FruitsDiet" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbv-gZ-YPG">
-                                            <rect key="frame" x="74" y="14" width="173" height="21"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <outlet property="sectionLabel" destination="pbv-gZ-YPG" id="wZp-0g-Ora"/>
-                                    </connections>
-                                </collectionReusableView>
-                                <connections>
-                                    <outlet property="dataSource" destination="FzZ-Xq-45V" id="z0q-lE-fR7"/>
-                                    <outlet property="delegate" destination="FzZ-Xq-45V" id="AnD-hg-AfV"/>
-                                </connections>
-                            </collectionView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FgO-Iq-vqA">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="AfQ-F3-LuN"/>
-                                    <barButtonItem systemItem="trash" id="r9C-09-SZz">
-                                        <connections>
-                                            <action selector="deleteCells:" destination="FzZ-Xq-45V" id="INO-v9-6Ht"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="OG9-Zt-oJA">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fIM-ZR-bWr">
-                            <connections>
-                                <action selector="addNewItem:" destination="FzZ-Xq-45V" id="wEQ-ms-K62"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="collectionView" destination="Qpu-22-ndN" id="JvW-LC-aq0"/>
-                        <outlet property="toolBar" destination="FgO-Iq-vqA" id="B9D-AT-cJk"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X56-Hs-pFt" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1085" y="361"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="d6k-Gc-nxV">
-            <objects>
-                <viewController id="PzR-lN-3Zj" customClass="DetailViewController" customModule="FruitsDiet" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8lw-xK-Nj4"/>
-                        <viewControllerLayoutGuide type="bottom" id="UjQ-zZ-T47"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="x2H-0F-0bj">
+                    <view key="view" contentMode="scaleToFill" id="t16-so-OpA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-eU-Jnv">
-                                <rect key="frame" x="33" y="187" width="254" height="254"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sSM-Lt-I1C"/>
-                    <connections>
-                        <outlet property="imageView" destination="ceT-eU-Jnv" id="vMX-hO-xBl"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R1z-Ne-MAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pk-Vb-2e1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1837" y="361"/>
+            <point key="canvasLocation" x="1023" y="361"/>
         </scene>
     </scenes>
     <resources>
