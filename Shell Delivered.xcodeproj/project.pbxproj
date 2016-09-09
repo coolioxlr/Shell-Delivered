@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAA9ACD11D82B7D7002BB39F /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = AAA9ACD01D82B7D7002BB39F /* test.json */; };
 		C8330DC91D826BD6008FE380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330DC81D826BD6008FE380 /* AppDelegate.swift */; };
 		C8330DCB1D826BD6008FE380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8330DCA1D826BD6008FE380 /* ViewController.swift */; };
 		C8330DCE1D826BD6008FE380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8330DCC1D826BD6008FE380 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAA9ACD01D82B7D7002BB39F /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		C8330DC51D826BD6008FE380 /* Shell Delivered.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shell Delivered.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8330DC81D826BD6008FE380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8330DCA1D826BD6008FE380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		C8330DC71D826BD6008FE380 /* Shell Delivered */ = {
 			isa = PBXGroup;
 			children = (
+				AAA9ACD01D82B7D7002BB39F /* test.json */,
 				C8330E041D8290FD008FE380 /* Fruit.swift */,
 				C8330E051D8290FD008FE380 /* FruitCell.swift */,
 				C8330E061D8290FD008FE380 /* FruitsHeaderView.swift */,
@@ -231,15 +234,18 @@
 					C8330DC41D826BD6008FE380 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2AN78ZW4XJ;
+						LastSwiftMigration = 0800;
 					};
 					C8330DDB1D826BD7008FE380 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2AN78ZW4XJ;
+						LastSwiftMigration = 0800;
 						TestTargetID = C8330DC41D826BD6008FE380;
 					};
 					C8330DE61D826BD7008FE380 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2AN78ZW4XJ;
+						LastSwiftMigration = 0800;
 						TestTargetID = C8330DC41D826BD6008FE380;
 					};
 				};
@@ -270,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8330DD61D826BD7008FE380 /* LaunchScreen.storyboard in Resources */,
+				AAA9ACD11D82B7D7002BB39F /* test.json in Resources */,
 				C8330DD31D826BD6008FE380 /* Assets.xcassets in Resources */,
 				C8330DCE1D826BD6008FE380 /* Main.storyboard in Resources */,
 			);
@@ -450,6 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hackathon.Shell-Delivered";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -461,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hackathon.Shell-Delivered";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -472,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hackathon.Shell-DeliveredTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shell Delivered.app/Shell Delivered";
 			};
 			name = Debug;
@@ -484,6 +494,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hackathon.Shell-DeliveredTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shell Delivered.app/Shell Delivered";
 			};
 			name = Release;
@@ -495,6 +506,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hackathon.Shell-DeliveredUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "Shell Delivered";
 			};
 			name = Debug;
@@ -506,6 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hackathon.Shell-DeliveredUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "Shell Delivered";
 			};
 			name = Release;
@@ -529,6 +542,7 @@
 				C8330DF21D826BD7008FE380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8330DF31D826BD7008FE380 /* Build configuration list for PBXNativeTarget "Shell DeliveredTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +551,7 @@
 				C8330DF51D826BD7008FE380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8330DF61D826BD7008FE380 /* Build configuration list for PBXNativeTarget "Shell DeliveredUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +560,7 @@
 				C8330DF81D826BD7008FE380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

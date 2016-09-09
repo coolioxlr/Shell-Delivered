@@ -93,7 +93,7 @@ extension Array {
     func indexOfObject<T:AnyObject>(item:T) -> Int {
         var index = -1
         for element in self {
-            index++
+            index += 1
             if item === element as? T {
                 return index
             }
